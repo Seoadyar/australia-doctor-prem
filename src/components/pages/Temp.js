@@ -82,7 +82,7 @@ function Temp() {
 
             <div className='why_video_cont'>
                 <div>
-                    <video data-aos="fade-up" src='https://firebasestorage.googleapis.com/v0/b/apollo-dental.appspot.com/o/Why%20Choose%20Us%203.mp4?alt=media&token=79501675-c01b-487a-9b52-1b7cbe71a573' style={{ width: "100%", height: "100%" }} autoPlay loop controls ></video>
+                    <video data-aos="fade-up" src='https://firebasestorage.googleapis.com/v0/b/apollo-dental.appspot.com/o/Why%20choose%20us%20with%20subs.mp4?alt=media&token=1a33f8ae-a3f7-4d11-8643-f89815e355e7' style={{ width: "100%", height: "100%" }} autoPlay loop controls ></video>
                 </div>
             </div>
 
