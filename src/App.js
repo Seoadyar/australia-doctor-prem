@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import whatsapp from './components/Assests/whatsapp.png'
 import './app.css'
 import Spinner from './components/pages/Spinner';
-
+import Enquire from './components/pages/enquire/Enquire';
  
 const Temp = React.lazy(() => import("./components/pages/Temp"));
 const Footer = React.lazy(() => import("./components/pages/Footer"));
@@ -50,7 +50,7 @@ function App() {
 
               <a href='https://wa.me/918939111172?text=Hai' className='whatsapp_icon'><img src={whatsapp} /></a>
               {/* <Help /> */}
-
+              <Enquire/>
             </div>
           )
       }
