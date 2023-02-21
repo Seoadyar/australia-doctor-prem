@@ -1,59 +1,57 @@
 import React from 'react'
 import '../css/Temp.css'
 import '../css/AllOn6.css'
+import '../css/Home.css'
 import { TiTick } from 'react-icons/ti'
 import drPrem from '../Assests/drPrem.jpg'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import allinfourone from '../Assests/allinfourone.png'
 import arrow from '../Assests/arrow.gif'
-import Phases_involved from '../Assests/Tourism/Phases_involved.jpg'
+//------infography------
+import phase1 from '../Assests/infograhy/phase1.jpg'
+import phase2 from '../Assests/infograhy/phase2.jpg'
+import phase3 from '../Assests/infograhy/phase3.jpg'
+import phase4 from '../Assests/infograhy/phase4.jpg'
+import phase5 from '../Assests/infograhy/phase5.jpg'
 
-// ------tourisum imgaes------------
-// ----------Food---------
-import food1 from '../Assests/Tourism/Food/food1.jpg'
-import food2 from '../Assests/Tourism/Food/food2.jpg'
-import food3 from '../Assests/Tourism/Food/food3.png'
-import food4 from '../Assests/Tourism/Food/food4.jpg'
-import food5 from '../Assests/Tourism/Food/food5.jpg'
-import food6 from '../Assests/Tourism/Food/food6.jpg'
-//---------historical--------------
-import his1 from '../Assests/Tourism/Historical Buidings/his1.jpg'
-import his2 from '../Assests/Tourism/Historical Buidings/his2.jpg'
-import his3 from '../Assests/Tourism/Historical Buidings/his3.jpg'
+//------home banner------
+import banner1 from '../Assests/home-banner/banner1.jpg'
+import banner2 from '../Assests/home-banner/banner2.jpg'
 
-import his5 from '../Assests/Tourism/Historical Buidings/his5.jpg'
-//---------- religion------------
-import rel1 from '../Assests/Tourism/Religious Places/rel1.png'
-import rel2 from '../Assests/Tourism/Religious Places/rel2.jpg'
-import rel3 from '../Assests/Tourism/Religious Places/rel3.jpg'
-import rel4 from '../Assests/Tourism/Religious Places/rel4.jpg'
-//----------shop------------
-import shop1 from '../Assests/Tourism/Shopping/shop1.jpg'
-import shop2 from '../Assests/Tourism/Shopping/shop2.jpg'
-import shop3 from '../Assests/Tourism/Shopping/shop3.jpg'
-import shop4 from '../Assests/Tourism/Shopping/shop4.jpg'
-import shop5 from '../Assests/Tourism/Shopping/shop5.jpg'
-//----------things to do-------------
-import things1 from '../Assests/Tourism/Things to do/things1.jpg'
-import things2 from '../Assests/Tourism/Things to do/things2.jpg'
-import things3 from '../Assests/Tourism/Things to do/things3.jpg'
-import things4 from '../Assests/Tourism/Things to do/things4.jpg'
-import things5 from '../Assests/Tourism/Things to do/things5.jpg'
+import bottomBanner1 from '../Assests/home-banner/bottomBanner.jpg'
+import bottomBanner2 from '../Assests/home-banner/bottomBanner.png'
 
-
-
-
-//------ECR----------------------
-import ST from '../Assests/Tourism/ECR/ST.jpg'
-import M1 from '../Assests/Tourism/ECR/M1.jpg'
-import SS1 from '../Assests/Tourism/ECR/SS1.jpg'
-import CB1 from '..//Assests/Tourism/ECR/CB1.jpg'
-import D2 from '../Assests/Tourism/ECR/D2.jpg'
 
 function Temp() {
     return (
         <div>
+            {/* slider */}
+            <div class="banner_slider">
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: true,
+                    }}
+                    pagination={{
+                        clickable: false,
+                    }}
+                    navigation={false}
+                    modules={[Autoplay]}
+                    className="mySwiper"
+                >
+                    <SwiperSlide>
+                        <img src={banner1} className="why_choose_img home_banner_img" />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        {" "}
+                        <img src={banner2} className="why_choose_img home_banner_img " />
+                    </SwiperSlide>
+                </Swiper>
+            </div>
             {/* doctor image */}
             <div className="all_on_6_des_title doctor_name_title" data-aos="fade-up">
                 <h1>Choose Premium Dental Implant Treatments by One of India's Best Implantologists, Dr. Prem Alex Lawrence.</h1>
@@ -119,10 +117,15 @@ function Temp() {
                     <div className='on6_div2_main_cont'>
 
                         <div className='on6_div2_main_cont_2 on4_on6_div2_main_cont_2' data-aos="fade-up">
-                            <p>It is estimated that one in five persons worldwide are missing one or more teeth. The significance of a tooth only becomes apparent when it is missing </p>
-                            <p>In an All-On-4 Implant treatment that essentially involves replacement of all missing teeth in one jaw by using only 4 Titanium implants and fixed artificial teeth. It involves a minor surgery after which the implant is placed and a crown is installed. This procedure gives patients a very natural appearing functional replacement tooth. </p>
-                            <p>Not every tooth must be lost for this kind of dental implant to be used. Instead, you only need four well corrective implants. For a fully restored smile, they are placed on the top and bottom of your mouth.</p>
-                            <p>The All-On-4 implants are positioned at an angle to allow us to avoid the jawbone's unhealthy areas. This is done so that bone grafting is not necessary. We also expect this to stably support a prosthesis placed just a few days after the operation.</p>
+
+                            <ul className='allOn4NewContatainer'>
+                                <li data-aos="fade-up">
+                                    <TiTick className="on6_tick_icon" />
+                                    <div>
+                                        <p>What to know b4 opting for All-On-4 treatment</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         <div className='on6_div2_main_cont_1'>
                             <img data-aos="fade-up" src={allinfourone} />
@@ -283,14 +286,61 @@ function Temp() {
                 <h2>Phases involved</h2>
                 <p></p>
             </div>
-
-            <div className='phase_involved_cont'>
-                <img src={Phases_involved} />
+            <div className='inforgrapyContainer'>
+                <div className='inforgrapyContainerBox'>
+                    <div className='inforgrapyContainerBoxItem'>
+                        <img src={phase1} />
+                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
+                        </p>
+                    </div>
+                    <div className='inforgrapyContainerBoxItem'>
+                        <img src={phase2} />
+                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
+                        </p>
+                    </div>
+                    <div className='inforgrapyContainerBoxItem'>
+                        <img src={phase3} />
+                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
+                        </p>
+                    </div>
+                    <div className='inforgrapyContainerBoxItem'>
+                        <img src={phase4} />
+                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
+                        </p>
+                    </div>
+                    <div className='inforgrapyContainerBoxItem'>
+                        <img src={phase5} />
+                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            {/* video consultation*/}
-            <div className='video_consult_cont'>
+            {/* bottom banner*/}
+            <div className='bottomBannerContainer'>
+                <div className='bottomBannerContainerBox'>
+                    <div className='bottomBannerContainerBoxItem'>
+                        <div className='bottomBannerContainerBoxItemPiece'>
+                            <p>27</p>
+                            <p>Dental Clinics</p>
+                        </div>
+                        <div className='bottomBannerContainerBoxItemPiece'>
+                            <p>70</p>
+                            <p>Dental Specialists</p>
+                        </div>
+                        <div className='bottomBannerContainerBoxItemPiece'>
+                            <p>109945</p>
+                            <p>Satisfied Patients</p>
+                        </div>
+                        <div className='bottomBannerContainerBoxItemPiece'>
+                            <p>110</p>
+                            <p>Inhouse Dentists</p>
+                        </div>
 
+                    </div>
+                    <img src={bottomBanner1} />
+                    <img src={bottomBanner2} />
+                </div>
             </div>
 
 
