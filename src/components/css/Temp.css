@@ -236,7 +236,24 @@
     color: #454545;
     margin-top: 10px;
 }
+.advantContainer{
 
+}
+.advantContainerBox{
+    height: 150px;
+}
+.advantContainerBoxItem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 111px;
+    border-radius: 10px;
+}
+.advantContainerBoxItem p{
+    margin: 0;
+}
 
 @media (max-width:600px) {
 

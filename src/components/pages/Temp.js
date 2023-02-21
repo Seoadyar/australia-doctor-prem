@@ -6,8 +6,11 @@ import { TiTick } from 'react-icons/ti'
 import drPrem from '../Assests/drPrem.jpg'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
+import { Pagination } from "swiper";
 import allinfourone from '../Assests/allinfourone.png'
 import arrow from '../Assests/arrow.gif'
+import "swiper/css";
+import "swiper/css/pagination";
 //------infography------
 import phase1 from '../Assests/infograhy/phase1.jpg'
 import phase2 from '../Assests/infograhy/phase2.jpg'
@@ -53,7 +56,7 @@ function Temp() {
                 </Swiper>
             </div>
             {/* doctor image */}
-            <div className="all_on_6_des_title doctor_name_title" data-aos="fade-up">
+            {/* <div className="all_on_6_des_title doctor_name_title" data-aos="fade-up">
                 <h1>Choose Premium Dental Implant Treatments by One of India's Best Implantologists, Dr. Prem Alex Lawrence.</h1>
                 <p></p>
             </div>
@@ -70,7 +73,7 @@ function Temp() {
                         <p data-aos="fade-up" ></p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Why Choose Us */}
             <div className="all_on_6_des_title doctor_name_title doctor_name_title11 major_reasons_cont major_reasons_cont1" data-aos="fade-up">
@@ -146,50 +149,86 @@ function Temp() {
                         <p></p>
                     </div>
 
-                    <div className='on6_div3_main_cont'>
+                    {/* <div className='on6_div3_main_cont'>
                         <div className='on6_div3_main_cont_2 on4_on6_div3_main_cont_2 on4_on6_div3_main_cont_2 on4_on6_div3_main_cont_2'>
                             <ul>
                                 <li data-aos="fade-up">
                                     <TiTick className="on6_tick_icon" />
                                     <div>
-                                        <h2>Rewards you with new teeth in just 1 to 2 days</h2>
-                                        <p>Within one to two days of your procedure, you will receive your full upper or lower set of teeth. All-On-4 dental implants give restoration that is almost immediate. </p>
+                                        <h2>Rewards you with new teeth in just 1 to 2 days
+                                        </h2>
+
                                     </div>
                                 </li>
                                 <li data-aos="fade-up">
                                     <TiTick className="on6_tick_icon" />
                                     <div>
-                                        <h2>Fixtures that are permanent </h2>
-                                        <p>The dental sets can be fixedly fastened to your mouth thanks to the four titanium anchors. This implies that, unlike conventional dentures, they won't become loose or move. </p>
+                                        <h2>Creates fixtures that are permanent  </h2>
+
                                     </div>
                                 </li>
                                 <li data-aos="fade-up">
                                     <TiTick className="on6_tick_icon" />
                                     <div>
-                                        <h2>Fewer implants means faster recovery time  </h2>
-                                        <p>There is less recovery time and pain connected with the treatment because there are only 4 anchor points rather than individual anchors placed throughout the mouth. </p>
+                                        <h2>Fewer implants means faster recovery time
+                                        </h2>
+
                                     </div>
                                 </li>
                                 <li data-aos="fade-up">
                                     <TiTick className="on6_tick_icon" />
                                     <div>
                                         <h2>More budget friendly </h2>
-                                        <p>Most of the time, All-On-4 dental implants are less expensive than having to replace each tooth separately.</p>
+
                                     </div>
                                 </li>
                                 <li data-aos="fade-up">
                                     <TiTick className="on6_tick_icon" />
                                     <div>
                                         <h2>Excellent across all ages. </h2>
-                                        <p>All-On-4 dental implants are an excellent solution for people of all ages who wear dentures or have decayed teeth.</p>
+
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                    </div> */}
+                    <div className='advantContainer'>
+                        <Swiper
+                             spaceBetween={30}
+                             centeredSlides={true}
+                             autoplay={{
+                               delay: 2500,
+                               disableOnInteraction: false,
+                             }}
+                             pagination={{
+                               clickable: true,
+                             }}
+                             navigation={true}
+                             modules={[Autoplay, Pagination, Navigation]}
+                        className='advantContainerBox'
+                       
+                        >
+                            <SwiperSlide className='advantContainerBoxItem'>
+                                <p>Rewards you with new teeth in just 1 to 2 days</p>
+                            </SwiperSlide>
+                            <SwiperSlide className='advantContainerBoxItem'>
+                                <p>Creates fixtures that are permanent </p>
+                            </SwiperSlide>
+                            <SwiperSlide className='advantContainerBoxItem'>
+                                <p>Fewer implants means faster recovery time</p>
+                            </SwiperSlide>
+                            <SwiperSlide className='advantContainerBoxItem'>
+                                <p>More budget friendly</p>
+                            </SwiperSlide>
+                            <SwiperSlide className='advantContainerBoxItem'>
+                                <p>Excellent across all ages</p>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
 
                 </div>
             </div>
+
 
 
 
@@ -214,6 +253,7 @@ function Temp() {
                                     <TiTick className="on6_tick_icon" />
                                     <div>
                                         We prescribe All-On-6 implants for patients who have an entire arch of missing teeth or who have partial tooth loss. All patients will receive a complete arch dental implant to replace their missing teeth. The All-On-6 approach is recommended as a reliable, long-term replacement for conventional dentures.
+
                                     </div>
                                 </li>
                             </ul>
