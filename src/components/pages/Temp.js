@@ -251,7 +251,7 @@ function Temp() {
                                 <li data-aos="fade-up">
                                     <TiTick className="on6_tick_icon" />
                                     <div>
-                                        If you are young, lose all your teeth and have adequate bone, with All-On-6 you can have your entire set of teeth again.
+                                        If you are young, lost all your teeth and have adequate bone, with All-On-6 you can have your entire set of teeth again.
                                     </div>
                                 </li>
                                 <li data-aos="fade-up">
@@ -371,7 +371,7 @@ function Temp() {
                         </div>
                         <div className='bottomBannerContainerBoxItemPiece'>
                             <p>9136</p>
-                            <p>Number of satisfied customers</p>
+                            <p>Happy Smiles Generated</p>
                         </div>
                         <div className='bottomBannerContainerBoxItemPiece'>
                             <p>17 Years</p>
