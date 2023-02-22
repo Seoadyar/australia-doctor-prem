@@ -109,6 +109,7 @@ function Footer() {
 
                         <p></p>
                         <p>All rights reserved to Premolar Healthcare LLP</p>
+                        <p>Powered by Woodhead Creative</p>
                     </div>
 
                 </div>

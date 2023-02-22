@@ -159,7 +159,7 @@
 
 .bottomBannerContainerBoxItem {
     display: flex;
-    background-color: #616161;
+    background-color: #f57825;
     justify-content: center;
     /* margin-bottom: 32px; */
     color: white;
@@ -167,12 +167,12 @@
 }
 
 .bottomBannerContainerBoxItemPiece {
-    width: 24%;
-    padding: 0 0.5%;
+    width: 33%;
+    padding: 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 2px solid #b5aeae;
+    border-right: 2px solid white;
 }
 
 .bottomBannerContainerBoxItemPiece:last-child {
@@ -236,8 +236,8 @@
     color: #454545;
     margin-top: 10px;
 }
-.advantContainer{
-
+.advantContainer {
+    padding-top: 28px;
 }
 .advantContainerBox{
     height: 150px;
@@ -264,6 +264,36 @@
     background-color: #54a2af !important;
     width: 43px;
     padding: 32px;
+}
+.homeBannerImgTxtContainer{
+    position: relative;
+}
+.homeBannerImgTxtContainerBox {
+    width: 47%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: white;
+    transform: translate(-50%, -2px , 50%);
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: stretch; */
+    align-items: center;
+}
+.homeBannerImgTxtContainerBox p{
+    margin: 0;
+    text-align: center;
+}
+.homeBannerImgTxtContainerBox p:nth-of-type(1) {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.homeBannerImgTxtContainerBox p:nth-of-type(2) {
+    font-size: 50px;
+}
+.homeBannerImgTxtContainerBox p:nth-of-type(3) {
+    font-size: 31px;
 }
 
 @media (max-width:600px) {
@@ -397,7 +427,7 @@
     }
 
     .bottomBannerContainerBoxItemPiece {
-        border-right: 1px solid #b5aeae;
+        border-right: 1px solid white;
     }
 
     .bottomBannerContainerBox img:nth-of-type(1) {
@@ -422,5 +452,14 @@
         width: 23px !important;
         height: 21px;
     }
-    
+    .homeBannerImgTxtContainerBox p:nth-of-type(1) {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .homeBannerImgTxtContainerBox p:nth-of-type(2) {
+        font-size: 16px;
+    }
+    .homeBannerImgTxtContainerBox p:nth-of-type(3) {
+        font-size: 12px;
+    }
 }

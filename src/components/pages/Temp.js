@@ -42,16 +42,21 @@ function Temp() {
                         clickable: false,
                     }}
                     navigation={false}
-                    modules={[Autoplay]}
+                    // modules={[Autoplay]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <img src={banner1} className="why_choose_img home_banner_img" />
+                    <SwiperSlide className='homeBannerImgTxtContainer'>
+                        <img src={banner2} className="why_choose_img home_banner_img" />
+                        <div className='homeBannerImgTxtContainerBox'>
+                        <p>choose premium personalized</p>
+                        <p> Dental implant treatment</p>
+                        <p>in<br></br> chennai and hyderabad</p>
+                        </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                         {" "}
-                        <img src={banner2} className="why_choose_img home_banner_img " />
+                        <img src={banner1} className="why_choose_img home_banner_img " />
                     </SwiperSlide>
                 </Swiper>
             </div>
@@ -88,13 +93,13 @@ function Temp() {
             </div>
 
             {/* know more about cont*/}
-            <div className='know_more'>
+            {/* <div className='know_more'>
                 <div>
                     <div className='knowmore_cont'>
                         <p data-aos="fade-up" >Implant<br></br>Treatments </p>
                         <a data-aos="fade-up" href='https://www.doctorprem.com/implants/guided-surgeries' target='_blank'>Know more<img data-aos="fade-up" src={arrow} /></a>
 
-                    </div>
+                    </div> */}
                     {/* <div className='knowmore_cont'>
                         <p  data-aos="fade-up" >All-On-4<br></br>Implants</p>
                         <a  data-aos="fade-up" href='https://www.doctorprem.com/AllOn4'>Know more<img  data-aos="fade-up" src={arrow}/></a>
@@ -106,14 +111,14 @@ function Temp() {
                         
                     </div> */}
 
-                </div>
-            </div>
+                {/* </div>
+            </div> */}
 
             <div className='on6_div22_cont on4_2_on6_div22_cont '>
                 <div className='on6_div2_cont'>
 
                     <div className="all_on_6_des_title on4_2_title_all_on_6_des_title " data-aos="fade-up">
-                        <h2>About All-On-4</h2>
+                        <h2>What you should know before opting for All-On-4 Treatment</h2>
                         <p></p>
                     </div>
 
@@ -121,14 +126,14 @@ function Temp() {
 
                         <div className='on6_div2_main_cont_2 on4_on6_div2_main_cont_2' data-aos="fade-up">
 
-                            <ul className='allOn4NewContatainer'>
+                            {/* <ul className='allOn4NewContatainer'>
                                 <li data-aos="fade-up">
                                     <TiTick className="on6_tick_icon" />
                                     <div>
                                         <p>What to know b4 opting for All-On-4 treatment</p>
                                     </div>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </div>
                         <div className='on6_div2_main_cont_1'>
                             <img data-aos="fade-up" src={allinfourone} />
@@ -144,10 +149,10 @@ function Temp() {
             <div className='on6_div33_cont on4_3_on6_div33_cont'>
                 <div className='on6_div3_cont'>
 
-                    <div className="all_on_6_des_title" data-aos="fade-up">
+                    {/* <div className="all_on_6_des_title" data-aos="fade-up">
                         <h2>Advantages for All-On-4</h2>
                         <p></p>
-                    </div>
+                    </div> */}
 
                     {/* <div className='on6_div3_main_cont'>
                         <div className='on6_div3_main_cont_2 on4_on6_div3_main_cont_2 on4_on6_div3_main_cont_2 on4_on6_div3_main_cont_2'>
@@ -361,21 +366,18 @@ function Temp() {
                 <div className='bottomBannerContainerBox'>
                     <div className='bottomBannerContainerBoxItem'>
                         <div className='bottomBannerContainerBoxItemPiece'>
-                            <p>27</p>
-                            <p>Dental Clinics</p>
+                            <p>24</p>
+                            <p>Number of Dental Specialists</p>
                         </div>
                         <div className='bottomBannerContainerBoxItemPiece'>
-                            <p>70</p>
-                            <p>Dental Specialists</p>
+                            <p>9136</p>
+                            <p>Number of satisfied customers</p>
                         </div>
                         <div className='bottomBannerContainerBoxItemPiece'>
-                            <p>109945</p>
-                            <p>Satisfied Patients</p>
+                            <p>17 Years</p>
+                            <p>Years in service</p>
                         </div>
-                        <div className='bottomBannerContainerBoxItemPiece'>
-                            <p>110</p>
-                            <p>Inhouse Dentists</p>
-                        </div>
+                      
 
                     </div>
                     <img src={bottomBanner1} />
