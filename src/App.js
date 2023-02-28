@@ -7,6 +7,7 @@ import whatsapp from './components/Assests/whatsapp.png'
 import './app.css'
 import Spinner from './components/pages/Spinner';
 import Enquire from './components/pages/enquire/Enquire';
+import ThankYou from './components/pages/ThankYou';
  
 const Temp = React.lazy(() => import("./components/pages/Temp"));
 const Footer = React.lazy(() => import("./components/pages/Footer"));
@@ -42,6 +43,7 @@ function App() {
               
                 <Route path="/" element={<React.Suspense fallback={<Spinner />}><Temp />  </React.Suspense>} />
                 <Route path="/Spinner" element={<Spinner />} />
+                <Route path="/thankyou" element={<React.Suspense fallback={<Spinner/>}><ThankYou/></React.Suspense>}/>
               </Routes>
 
               <Footer />

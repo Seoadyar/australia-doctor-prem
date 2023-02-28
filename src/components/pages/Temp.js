@@ -17,13 +17,18 @@ import phase2 from '../Assests/infograhy/phase2.jpg'
 import phase3 from '../Assests/infograhy/phase3.jpg'
 import phase4 from '../Assests/infograhy/phase4.jpg'
 import phase5 from '../Assests/infograhy/phase5.jpg'
-
 //------home banner------
 import banner1 from '../Assests/home-banner/banner1.jpg'
 import banner2 from '../Assests/home-banner/banner2.jpg'
-
+//-----bottom banner------
 import bottomBanner1 from '../Assests/home-banner/bottomBanner.jpg'
 import bottomBanner2 from '../Assests/home-banner/bottomBanner.png'
+//------all-on4-treat-banners--------
+import treat1 from '../Assests/all-on4-treatment-banners/treat1.jpg'
+import treat2 from '../Assests/all-on4-treatment-banners/treat2.jpg'
+import treat3 from '../Assests/all-on4-treatment-banners/treat3.jpg'
+import treat4 from '../Assests/all-on4-treatment-banners/treat4.jpg'
+import treat5 from '../Assests/all-on4-treatment-banners/treat5.jpg'
 
 
 function Temp() {
@@ -48,9 +53,9 @@ function Temp() {
                     <SwiperSlide className='homeBannerImgTxtContainer'>
                         <img src={banner2} className="why_choose_img home_banner_img" />
                         <div className='homeBannerImgTxtContainerBox'>
-                        <p>choose premium personalized</p>
-                        <p> Dental implant treatment</p>
-                        <p>in<br></br> Chennai and Hyderabad</p>
+                            <p>choose premium personalized</p>
+                            <p> Dental implant treatment</p>
+                            <p>in<br></br> Chennai and Hyderabad</p>
                         </div>
                     </SwiperSlide>
 
@@ -60,25 +65,7 @@ function Temp() {
                     </SwiperSlide>
                 </Swiper>
             </div>
-            {/* doctor image */}
-            {/* <div className="all_on_6_des_title doctor_name_title" data-aos="fade-up">
-                <h1>Choose Premium Dental Implant Treatments by One of India's Best Implantologists, Dr. Prem Alex Lawrence.</h1>
-                <p></p>
-            </div>
 
-            <div className='docto_img_main_cont'>
-                <div className='docto_img_cont'>
-
-                    <div>
-                        <img src={drPrem} data-aos="fade-up" />
-                    </div>
-                    <div data-aos="fade-up">
-                        <p data-aos="fade-up" >With more than 15 years of experience in performing dental miracles Dr Prem is a luminiarry, a certified Diplomate and a Fellow of the International Congress of Oral Implantologistst. He has performed more than 6000+ successful dental implants. His unrivaled clinical expertise offers a tailored and laser-focused approach to treatment.</p>
-                        <p data-aos="fade-up" >The International Congress of Oral Implantologists has recognised him as a Diplomat and Fellow. Additionally, he is also a licensed laser specialist. He was nominated for  “Outstanding Dentist of the Year in India- under 45 Years" in 2015 and as "Implantologist in India" by Famdent. Dr Prem is a celebrated member of Indian Dental Association, International Congress of Oral Implants and Indian Society of Periodontology.</p>
-                        <p data-aos="fade-up" ></p>
-                    </div>
-                </div>
-            </div> */}
 
             {/* Why Choose Us */}
             <div className="all_on_6_des_title doctor_name_title doctor_name_title11 major_reasons_cont major_reasons_cont1" data-aos="fade-up">
@@ -92,32 +79,31 @@ function Temp() {
                 </div>
             </div>
 
-            {/* know more about cont*/}
-            {/* <div className='know_more'>
-                <div>
-                    <div className='knowmore_cont'>
-                        <p data-aos="fade-up" >Implant<br></br>Treatments </p>
-                        <a data-aos="fade-up" href='https://www.doctorprem.com/implants/guided-surgeries' target='_blank'>Know more<img data-aos="fade-up" src={arrow} /></a>
+            {/* doctor image */}
 
-                    </div> */}
-                    {/* <div className='knowmore_cont'>
-                        <p  data-aos="fade-up" >All-On-4<br></br>Implants</p>
-                        <a  data-aos="fade-up" href='https://www.doctorprem.com/AllOn4'>Know more<img  data-aos="fade-up" src={arrow}/></a>
-                      
+            <div className="all_on_6_des_title doctor_name_title" data-aos="fade-up">
+                <h1>     <h2>Meet Our Expert</h2></h1>
+                <p></p>
+            </div>
+
+            <div className='docto_img_main_cont'>
+                <div className='docto_img_cont'>
+
+                    <div>
+                        <img src={drPrem} data-aos="fade-up" />
                     </div>
-                    <div className='knowmore_cont'>
-                        <p  data-aos="fade-up" >All-On-6<br></br> Implants</p>
-                        <a  data-aos="fade-up" href='https://www.doctorprem.com/AllOn6'>Know more<img  data-aos="fade-up" src={arrow}/></a>
-                        
-                    </div> */}
+                    <div data-aos="fade-up">
+                        <p data-aos="fade-up" >Senior Implantologist with more than 6000 successful dental implantsDiplomat and fellow of the International Congress of Oral ImplantologistsNominated for “Outstanding Dentist of the Year in India- under 45 Years" in 2015 and "Implantologist in India" by Famdent</p>
+                        <p><a className="DoctorReadmore" href='https://www.doctorprem.com/advantage/meet-drprem'>Read More</a></p>
+                    </div>
+                </div>
+            </div>
 
-                {/* </div>
-            </div> */}
 
             <div className='on6_div22_cont on4_2_on6_div22_cont '>
                 <div className='on6_div2_cont'>
 
-                    <div className="all_on_6_des_title on4_2_title_all_on_6_des_title " data-aos="fade-up">
+                    <div className="all_on_6_des_title on4_2_title_all_on_6_des_title aboveBannerText" data-aos="fade-up">
                         <h2>What you should know before opting for All-On-4 Treatment</h2>
                         <p></p>
                     </div>
@@ -126,18 +112,10 @@ function Temp() {
 
                         <div className='on6_div2_main_cont_2 on4_on6_div2_main_cont_2' data-aos="fade-up">
 
-                            {/* <ul className='allOn4NewContatainer'>
-                                <li data-aos="fade-up">
-                                    <TiTick className="on6_tick_icon" />
-                                    <div>
-                                        <p>What to know b4 opting for All-On-4 treatment</p>
-                                    </div>
-                                </li>
-                            </ul> */}
                         </div>
-                        <div className='on6_div2_main_cont_1'>
+                        {/* <div className='on6_div2_main_cont_1'>
                             <img data-aos="fade-up" src={allinfourone} />
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
@@ -147,86 +125,39 @@ function Temp() {
 
 
             <div className='on6_div33_cont on4_3_on6_div33_cont'>
-                <div className='on6_div3_cont'>
+                <div className='on6_div3_cont on6_div3_contTreatSlider'>
 
-                    {/* <div className="all_on_6_des_title" data-aos="fade-up">
-                        <h2>Advantages for All-On-4</h2>
-                        <p></p>
-                    </div> */}
 
-                    {/* <div className='on6_div3_main_cont'>
-                        <div className='on6_div3_main_cont_2 on4_on6_div3_main_cont_2 on4_on6_div3_main_cont_2 on4_on6_div3_main_cont_2'>
-                            <ul>
-                                <li data-aos="fade-up">
-                                    <TiTick className="on6_tick_icon" />
-                                    <div>
-                                        <h2>Rewards you with new teeth in just 1 to 2 days
-                                        </h2>
-
-                                    </div>
-                                </li>
-                                <li data-aos="fade-up">
-                                    <TiTick className="on6_tick_icon" />
-                                    <div>
-                                        <h2>Creates fixtures that are permanent  </h2>
-
-                                    </div>
-                                </li>
-                                <li data-aos="fade-up">
-                                    <TiTick className="on6_tick_icon" />
-                                    <div>
-                                        <h2>Fewer implants means faster recovery time
-                                        </h2>
-
-                                    </div>
-                                </li>
-                                <li data-aos="fade-up">
-                                    <TiTick className="on6_tick_icon" />
-                                    <div>
-                                        <h2>More budget friendly </h2>
-
-                                    </div>
-                                </li>
-                                <li data-aos="fade-up">
-                                    <TiTick className="on6_tick_icon" />
-                                    <div>
-                                        <h2>Excellent across all ages. </h2>
-
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> */}
                     <div className='advantContainer'>
                         <Swiper
-                             spaceBetween={30}
-                             centeredSlides={true}
-                             autoplay={{
-                               delay: 2500,
-                               disableOnInteraction: false,
-                             }}
-                             pagination={{
-                               clickable: true,
-                             }}
-                             navigation={true}
-                             modules={[Autoplay, Pagination, Navigation]}
-                        className='advantContainerBox'
-                       
+                            spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
+                            className='advantContainerBox'
+
                         >
                             <SwiperSlide className='advantContainerBoxItem'>
-                                <p>Rewards you with new teeth in just 1 to 2 days</p>
+                                <img src={treat1} />
                             </SwiperSlide>
                             <SwiperSlide className='advantContainerBoxItem'>
-                                <p>Creates fixtures that are permanent </p>
+                                <img src={treat2} />
                             </SwiperSlide>
                             <SwiperSlide className='advantContainerBoxItem'>
-                                <p>Fewer implants means faster recovery time</p>
+                                <img src={treat3} />
                             </SwiperSlide>
                             <SwiperSlide className='advantContainerBoxItem'>
-                                <p>More budget friendly</p>
+                                <img src={treat4} />
                             </SwiperSlide>
                             <SwiperSlide className='advantContainerBoxItem'>
-                                <p>Excellent across all ages</p>
+                                <img src={treat5} />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -377,7 +308,7 @@ function Temp() {
                             <p>17 Years</p>
                             <p>Years in service</p>
                         </div>
-                      
+
 
                     </div>
                     <img src={bottomBanner1} />

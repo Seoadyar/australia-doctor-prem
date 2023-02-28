@@ -143,23 +143,36 @@
 .falseEnquireFormContainer .dropdownContainer{
     display: none;
 }
-.MenuLabelText{
-    position: relative;
-    top: -2px;
-    font-size: 15px;
-    left: -9px;
-    color: #757575;
+form .MenuLabelText{
+    position: relative !important;
+    top: -2px !important;
+    font-size: 15px !important;
+    left: -9px !important;
+    color: #757575 !important;
 }
-.MuiPaper-root {
-    position: relative;
+ /* .MuiPaper-root {
     min-width: 288px !important;
     right: 61px !important;
-    margin: -5px 0 0 -34px;
+    margin: -27px 0 0 -27px !important;
     z-index: 3;
-}
-.MuiSelect-select {
+} */
+form .MuiSelect-select {
     position: relative;
     top: -6.5px !important;
+}
+.enquireSpinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 3;
+    height:100%;
+    width: 100%;
+    position: absolute;
+top: 0;
+right: 0;
+ 
+
 }
 
 

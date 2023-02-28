@@ -164,6 +164,7 @@
     /* margin-bottom: 32px; */
     color: white;
     padding: 50px 0 50px 0px;
+    margin-top: 29px;
 }
 
 .bottomBannerContainerBoxItemPiece {
@@ -240,33 +241,36 @@
     padding-top: 28px;
 }
 .advantContainerBox{
-    height: 150px;
+  
 }
 .advantContainerBoxItem {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+   
     height: 111px;
     border-radius: 10px;
     padding: 0 50px;
 }
-.advantContainerBoxItem p{
-    margin: 0;
+.advantContainerBoxItem img{
+   width: 100%;
 }
-.advantContainerBox .swiper-button-next, .swiper-button-prev {
-    color: #000000 !important;
-    scale: 0.35;
-    font-weight: bolder !important;
-    border-radius: 50%;
-    border: 2px solid #54a2af !important;
-    background-color: #54a2af !important;
-    width: 43px;
-    padding: 32px;
+.on6_div3_contTreatSlider{
+    width: 100% !important;
 }
+ 
 .homeBannerImgTxtContainer{
     position: relative;
+}
+.on6_div3_contTreatSlider .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 34px !important;
+    margin-top: -32px !important;
+}
+.on6_div3_contTreatSlider .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 36px !important;
+    margin-top: -32px !important;
 }
 .homeBannerImgTxtContainerBox {
     width: 47%;
@@ -294,6 +298,17 @@
 }
 .homeBannerImgTxtContainerBox p:nth-of-type(3) {
     font-size: 31px;
+}
+.DoctorReadmore {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    background-color: #0066cc;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.DoctorReadmore:hover {
+    color: white;
 }
 
 @media (max-width:600px) {
@@ -363,7 +378,7 @@
 
     .docto_img_cont div:nth-child(2) {
         margin-top: 15px;
-        width: 100%;
+        width: 82%;
     }
 
     .docto_img_cont div:nth-child(1) img {
@@ -371,14 +386,15 @@
     }
 
     .docto_img_cont {
-        width: 90%;
+        width: 100%;
+        align-items: center;
         flex-direction: column;
     }
 
     .docto_img_cont div:nth-child(2) p {
         margin-left: 0;
         line-height: 2;
-        text-align: center;
+        text-align: justify;
     }
 
     .why_video_cont div {
@@ -412,6 +428,7 @@
 
     .bottomBannerContainerBoxItemPiece p:first-child {
         font-size: 24px;
+        text-align: center;
     }
 
     .bottomBannerContainerBoxItemPiece p:last-child {
@@ -420,6 +437,8 @@
         letter-spacing: 0.7px;
         text-align: center;
         margin-top: -7px;
+        width: 100%;
+        overflow-wrap: break-word;
     }
 
     .bottomBannerContainerBoxItem {
@@ -461,5 +480,23 @@
     }
     .homeBannerImgTxtContainerBox p:nth-of-type(3) {
         font-size: 12px;
+    }
+    .aboveBannerText{
+        margin-bottom: 0 !important;
+    }
+    .advantContainer {
+        
+        padding-top: 0px !important;
+    }
+    .advantContainerBoxItem {
+        padding: 0 10px;
+    }
+    .on6_div3_contTreatSlider .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 0px !important;
+        margin-top: -32px !important;
+    }
+    .on6_div3_contTreatSlider .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 0 !important;
+        margin-top: -32px !important;
     }
 }
