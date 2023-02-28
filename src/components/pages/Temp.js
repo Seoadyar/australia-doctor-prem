@@ -50,7 +50,7 @@ function Temp() {
                         <div className='homeBannerImgTxtContainerBox'>
                         <p>choose premium personalized</p>
                         <p> Dental implant treatment</p>
-                        <p>in<br></br> chennai and hyderabad</p>
+                        <p>in<br></br> Chennai and Hyderabad</p>
                         </div>
                     </SwiperSlide>
 
@@ -301,7 +301,7 @@ function Temp() {
 
             {/* vlog   */}
             <div className="all_on_6_des_title doctor_name_title doctor_name_title11 learn_more_cont" data-aos="fade-up">
-                <h2>Learn More</h2>
+                <h2> Subscribe for the latest update</h2>
                 <p></p>
             </div>
             <div className='vlogn_cont'>
