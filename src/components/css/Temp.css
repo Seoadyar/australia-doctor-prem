@@ -37,20 +37,14 @@
 .docto_img_cont div:nth-child(2){
     
 } */
-.docto_img_cont div:nth-child(1) img {
-    width: 400px;
-    height: 100%;
-    box-shadow: 0 0px 15px 0 #d0d0d0;
-    border-radius: 5px;
-}
-
+ 
 .docto_img_cont div:nth-child(2) p {
     margin-left: 36px;
     line-height: 2;
 }
 
 .docto_img_cont {
-    width: 80%;
+    width: 90%;
     display: flex;
 }
 
@@ -240,9 +234,7 @@
 .advantContainer {
     padding-top: 28px;
 }
-.advantContainerBox{
-  
-}
+ 
 .advantContainerBoxItem {
     width: 100%;
     height: 100%;
@@ -310,7 +302,27 @@
 .DoctorReadmore:hover {
     color: white;
 }
+.inforgrapyContainerBoxItem ol li:first-child{
+    margin-top: 5px;
+}
+.inforgrapyContainerBoxItem ol li{
+    overflow-wrap:break-word;
+    padding: 0 8px 0 0 ;
+    margin-bottom:5px;
+}
+.docto_img_cont{
+    position:relative;
+}
+.docto_img_cont img{
+    width: 100%;
+}
+.docto_img_contTextContainer{
+    position: absolute;
+    top: 0;
+}
 
+/* ---------------------media quries-------------------
+------------------------------------------------------- */
 @media (max-width:600px) {
 
     .all_on_6_des_title h1,

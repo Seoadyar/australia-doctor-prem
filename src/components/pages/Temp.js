@@ -29,7 +29,10 @@ import treat2 from '../Assests/all-on4-treatment-banners/treat2.jpg'
 import treat3 from '../Assests/all-on4-treatment-banners/treat3.jpg'
 import treat4 from '../Assests/all-on4-treatment-banners/treat4.jpg'
 import treat5 from '../Assests/all-on4-treatment-banners/treat5.jpg'
-
+//-----react-counter---------
+import CountUp from "react-countup";
+//------meet-out-expert-------
+import meetOurExpert from '../Assests/meetOurExpert.jpg'
 
 function Temp() {
     return (
@@ -90,12 +93,12 @@ function Temp() {
                 <div className='docto_img_cont'>
 
                     <div>
-                        <img src={drPrem} data-aos="fade-up" />
+                        <img src={meetOurExpert} data-aos="fade-up" />
                     </div>
-                    <div data-aos="fade-up">
+                    {/* <div data-aos="fade-up" className='docto_img_contTextContainer' >
                         <p data-aos="fade-up" >Senior Implantologist with more than 6000 successful dental implantsDiplomat and fellow of the International Congress of Oral ImplantologistsNominated for “Outstanding Dentist of the Year in India- under 45 Years" in 2015 and "Implantologist in India" by Famdent</p>
                         <p><a className="DoctorReadmore" href='https://www.doctorprem.com/advantage/meet-drprem'>Read More</a></p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -251,8 +254,16 @@ function Temp() {
             </div>
 
             <div className='walk_through_cont'>
-                <p>We understand that coming to a foreign land and getting life saving care can be intimidating. We offer you premium dental treatments at moderate costs. To help our international patients have a streamlined and easy experience we have put together an easy patient process that will make their treatment and stay safe and pleasant. We provide end-to-end care from the time you contact us.</p>
-                <p>Our dentists will call you and assess your teeth and gums using Zoom, Skype, and email. After that, we can develop a preliminary treatment plan, and you can arrange to come see us. When necessary, our staff will collect you up from the airport, shuttle you to your hotel, and then drop you at our dental clinic. After your arrival, we discuss your travel alternatives based on the treatment plan for you and your family members or guests that accompany you.</p>
+                <p>Apart from the obvious cost savings, our patrons are treated with end-to-end service
+                    from the time you get in touch with us. Our dentists will get on the phone with you
+                    and evaluate your dental condition over a phone / internet call. Following this, we can
+                    make a tentative treatment plan and you can book tickets to visit us.</p>
+                <p>Our hospitality
+                    staff will pick you up from the airport and drop you off at your hotel before shuttling
+                    you to our clinic and back when necessary. Based on the treatment plan, options for
+                    tourism can be worked out as well after you and your accompanying guests arrive
+                    here. Additionally, we have tie-ups with great local hotels and travel companies that
+                    will make your stay luxurious, enjoyable and inexpensive!</p>
             </div>
 
 
@@ -266,28 +277,86 @@ function Temp() {
                 <div className='inforgrapyContainerBox'>
                     <div className='inforgrapyContainerBoxItem'>
                         <img src={phase1} />
-                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
-                        </p>
+                        <ol>
+                            <li>
+                                Online chat
+                            </li>
+                            <li>Email: prem.vale@premolar.org</li>
+                            <li>Whatsapp call or text at: <a href='tel:8939111172'>+91-8939111172</a></li>
+                            <li>Upon contact, our doctors will review your requirements and reach out to you
+                                in order to ensure they have a clear understanding of your case. A telephone
+                                or video call may be arranged at a time of convenience to ensure complete
+                                clarity. This will also allow us to give you an accurate estimate of treatment
+                                costs and fees.</li>
+                            <li>Upon agreement of the treatment procedure along with discussion of the costs
+                                and fees, we will proceed to the next step.</li>
+                        </ol>
                     </div>
                     <div className='inforgrapyContainerBoxItem'>
                         <img src={phase2} />
-                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
-                        </p>
+                        <ol>
+                            <li>Here we can identify convenient dates for your treatment, following which you
+                                will need to obtain an Indian medical visa as well as book flights to the
+                                Chennai International Airport (Airport Code: MAA). Comprehensive and
+                                detailed information regarding the Indian Medical Visa as well as guidelines
+
+                                on obtaining one can be found
+                                at <a href='https://indianvisaonline.gov.in/visa/index.html' style={{ color: "black" }}>https://indianvisaonline.gov.in/visa/index.html</a>
+                            </li>
+                            <li>
+                                We can also assist you with booking accommodation with some of our hotel
+                                partners at lower pre-negotiated rates.
+                            </li>
+                        </ol>
                     </div>
                     <div className='inforgrapyContainerBoxItem'>
                         <img src={phase3} />
-                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
-                        </p>
+                        <ol>
+                            <li>
+                                Upon your arrival in Chennai, our hospitality manager will meet you and any
+                                accompanying friends/family at the airport and transfer you to your
+                                accommodation. Any requirements you may have or any information you
+                                might require will be addressed by our hospitality manager.
+                            </li>
+                            <li>
+                                We will also provide you with several other services while you are here
+                                including:
+                            </li>
+                            <li>
+                                Complimentary transfers between the airport and your accommodation (both
+                                ways).
+                            </li>
+                            <li>
+                                A local mobile phone number so you can contact local establishments easily
+                                with internet access while you are on the move.
+                            </li>
+                        </ol>
                     </div>
                     <div className='inforgrapyContainerBoxItem'>
                         <img src={phase4} />
-                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
-                        </p>
+                        <ol>
+                            <li>
+                                Once you arrive at our clinic, we will perform a comprehensive clinical
+                                evaluation and finalize your treatment plan. Our doctors are very experienced
+                                and will explain the options available very systematically. Our staff will ensure
+                                you receive the utmost comfort and care during your treatment stages.
+                            </li>
+                            <li>
+                                The duration of the treatment will vary on a case to case basis. In your time
+                                outside of treatment, we invite you to explore and experience all that the city
+                                has to offer (while following your doctor’s guidelines of course!)
+                            </li>
+                        </ol>
                     </div>
                     <div className='inforgrapyContainerBoxItem'>
                         <img src={phase5} />
-                        <p>You can contact us via Zoom, Skype, Email or Whatsapp to share your medical history and clarify your concerns.  Our team of experts will provide you with the treatment plan and cost estimate
-                        </p>
+                        <ol>
+                            <li>
+                                After completing your treatment, our manager will guide you to the airport on
+                                your date of departure so you may safely travel home with your new set of
+                                pristine teeth!
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -297,15 +366,15 @@ function Temp() {
                 <div className='bottomBannerContainerBox'>
                     <div className='bottomBannerContainerBoxItem'>
                         <div className='bottomBannerContainerBoxItemPiece'>
-                            <p>24</p>
+                            <p><CountUp duration={3} className="counter" end="24" /></p>
                             <p>Number of Dental Specialists</p>
                         </div>
                         <div className='bottomBannerContainerBoxItemPiece'>
-                            <p>9136</p>
+                            <p><CountUp duration={7} className="counter" end="9136" /></p>
                             <p>Happy Smiles Generated</p>
                         </div>
                         <div className='bottomBannerContainerBoxItemPiece'>
-                            <p>17 Years</p>
+                            <p><CountUp duration={3} className="counter" end="17" /> Years</p>
                             <p>Years in service</p>
                         </div>
 
