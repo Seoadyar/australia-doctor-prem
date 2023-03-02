@@ -29,10 +29,16 @@ import treat2 from '../Assests/all-on4-treatment-banners/treat2.jpg'
 import treat3 from '../Assests/all-on4-treatment-banners/treat3.jpg'
 import treat4 from '../Assests/all-on4-treatment-banners/treat4.jpg'
 import treat5 from '../Assests/all-on4-treatment-banners/treat5.jpg'
+import Mtreat1 from '../Assests/all-on4-treatment-banners/Mtreat1.jpg'
+import Mtreat2 from '../Assests/all-on4-treatment-banners/Mtreat2.jpg'
+import Mtreat3 from '../Assests/all-on4-treatment-banners/Mtreat3.jpg'
+import Mtreat4 from '../Assests/all-on4-treatment-banners/Mtreat4.jpg'
+import Mtreat5 from '../Assests/all-on4-treatment-banners/Mtreat5.jpg'
 //-----react-counter---------
 import CountUp from "react-countup";
 //------meet-out-expert-------
 import meetOurExpert from '../Assests/meetOurExpert.jpg'
+import MmeetOurExpert from '../Assests/MmeetOurExpert.jpg'
 
 function Temp() {
     return (
@@ -94,6 +100,7 @@ function Temp() {
 
                     <div>
                         <img src={meetOurExpert} data-aos="fade-up" />
+                        <img src={MmeetOurExpert} data-aos="fade-up" />
                     </div>
                     {/* <div data-aos="fade-up" className='docto_img_contTextContainer' >
                         <p data-aos="fade-up" >Senior Implantologist with more than 6000 successful dental implantsDiplomat and fellow of the International Congress of Oral ImplantologistsNominated for “Outstanding Dentist of the Year in India- under 45 Years" in 2015 and "Implantologist in India" by Famdent</p>
@@ -149,18 +156,23 @@ function Temp() {
                         >
                             <SwiperSlide className='advantContainerBoxItem'>
                                 <img src={treat1} />
+                                <img src={Mtreat1} />
                             </SwiperSlide>
                             <SwiperSlide className='advantContainerBoxItem'>
                                 <img src={treat2} />
+                                <img src={Mtreat2} />
                             </SwiperSlide>
                             <SwiperSlide className='advantContainerBoxItem'>
                                 <img src={treat3} />
+                                <img src={Mtreat3} />
                             </SwiperSlide>
                             <SwiperSlide className='advantContainerBoxItem'>
                                 <img src={treat4} />
+                                <img src={Mtreat4} />
                             </SwiperSlide>
                             <SwiperSlide className='advantContainerBoxItem'>
                                 <img src={treat5} />
+                                <img src={Mtreat5} />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -301,7 +313,7 @@ function Temp() {
                                 detailed information regarding the Indian Medical Visa as well as guidelines
 
                                 on obtaining one can be found
-                                at <a href='https://indianvisaonline.gov.in/visa/index.html' style={{ color: "black" }}>https://indianvisaonline.gov.in/visa/index.html</a>
+                                at <a href='https://indianvisaonline.gov.in/visa/index.html' >https://indianvisaonline.gov.in/visa/index.html</a>
                             </li>
                             <li>
                                 We can also assist you with booking accommodation with some of our hotel
@@ -366,7 +378,7 @@ function Temp() {
                 <div className='bottomBannerContainerBox'>
                     <div className='bottomBannerContainerBoxItem'>
                         <div className='bottomBannerContainerBoxItemPiece'>
-                            <p><CountUp duration={3} className="counter" end="24" /></p>
+                            <p><CountUp duration={7} className="counter" end="24" /></p>
                             <p>Number of Dental Specialists</p>
                         </div>
                         <div className='bottomBannerContainerBoxItemPiece'>
@@ -374,7 +386,7 @@ function Temp() {
                             <p>Happy Smiles Generated</p>
                         </div>
                         <div className='bottomBannerContainerBoxItemPiece'>
-                            <p><CountUp duration={3} className="counter" end="17" /> Years</p>
+                            <p><CountUp duration={7} className="counter" end="17" /> Years</p>
                             <p>Years in service</p>
                         </div>
 
