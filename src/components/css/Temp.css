@@ -15,6 +15,7 @@
     font-size: 28px;
     font-weight: bold;
     color: #54a2af;
+    padding: 0 10px;
 }
 
 .all_on_6_des_title p {
@@ -217,7 +218,7 @@
 .inforgrapyContainerBoxItem {
     width: 250px;
     border-radius: 21px;
-    box-shadow: 0 0 8px 0 #eaeaea;
+    box-shadow: 0 0 42px 0 #eaeaea;
     margin: 15px;
 }
 .inforgrapyContainerBoxItem img {
